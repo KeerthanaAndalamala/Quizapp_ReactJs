@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form demo</title>
+</head>
+<body>
+    <form onsubmit="fun(event)">
+    <input type="radio" name="gen" value="m"/><label>Male</label>
+    <input type="radio" name="gen" value="f"/><label>Female</label>
+    <input type="radio" name="gen" value="o"/><label>Other</label><br><br>
+    <input type="submit"/>
+</form>
+<script>
+    function fun(event)
+    {
+        let g=event.target.gen.value;
+        alert("Gender = "+g);
+    }
+</script>
+</body>
+</html>
